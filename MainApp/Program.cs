@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Library;
+using Npgsql;
+using Dapper;
+
+StudentService studentService=new StudentService();
+studentService.GetStudentById(1);
